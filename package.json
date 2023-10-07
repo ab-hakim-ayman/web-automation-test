@@ -1,0 +1,21 @@
+{
+  "name": "web-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cucumber-js ./features/login.feature",
+    "allure": "allure generate allure-results --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "allure-commandline": "^2.24.1",
+    "chai": "^4.3.10",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.7",
+    "selenium-webdriver": "^4.13.0"
+  }
+}
