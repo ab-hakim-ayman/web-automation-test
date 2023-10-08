@@ -6,6 +6,7 @@ class LoginPage {
         this.emailInput = By.id('input-email');
         this.passwordInput = By.id('input-password');
         this.loginButton = By.xpath('//*[@id="content"]/div/div[2]/div/form/div[3]/div/button');
+        this.forgotPasswordButton = By.xpath('//*[@id="content"]/div/div[2]/div/form/div[2]/div/a')
         this.userProfile = By.className('my-account');
         this.errorMessage = By.css('.alert.alert-danger');
     }
@@ -20,6 +21,10 @@ class LoginPage {
 
     async enterPassword(password) {
         await this.driver.findElement(this.passwordInput).sendKeys(password);
+    }
+
+    async clickForgotPasswordLink() {
+        await this.driver.findElement(this.forgotPasswordButton).click();
     }
 
     async clickLoginButton() {
