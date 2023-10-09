@@ -17,5 +17,8 @@
     "chai-as-promised": "^7.1.1",
     "cucumber": "^6.0.7",
     "selenium-webdriver": "^4.13.0"
+  },
+  "devDependencies": {
+    "allure-js-commons": "^2.9.2"
   }
 }
