@@ -13,6 +13,7 @@ class HomePage {
 
     async navigateToHomePage(url) {
         await this.driver.get(url);
+        return this;
     }
 
     async getPageTitle() {

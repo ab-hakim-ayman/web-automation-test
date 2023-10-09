@@ -29,7 +29,7 @@ class LoginPage {
 
     async clickLoginButton() {
         await this.driver.findElement(this.loginButton).click();
-        await this.driver.wait(until.elementLocated(By.className('alert')), 5000);
+        await this.driver.wait(until.elementLocated(By.xpath('//*[@id="column-right"]/div/div/div/div/div/div/div/ul/li[1]/a/span')), 5000);
     }
 
     async getUserProfile() {
